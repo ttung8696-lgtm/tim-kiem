@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111526">
+<title>Làng GoPet — Phiêu lưu cùng thú cưng</title>
+<link rel="icon" href="./assets/fox.webp" type="image/webp">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="top"><div class="shell top-inner">
+ <a class="brand" href="#lang" aria-label="Làng GoPet, về làng"><span class="crest" data-icon="paw"></span><span>Go<span class="accent">Pet</span><small>LÀNG THÚ CƯNG</small></span></a>
+ <nav class="nav" aria-label="Khu vực"><a href="#lang" data-route="lang"><span data-icon="home"></span> Làng thú</a><a href="#dau-truong" data-route="dau-truong"><span data-icon="swords"></span> Đấu trường</a><a href="#tui-do" data-route="tui-do"><span data-icon="bag"></span> Túi đồ</a></nav>
+ <div class="wallet" title="Xu của bạn"><span data-icon="coin"></span><span id="coins">120</span><span class="wallet-label">xu</span></div>
+</div></header>
+<main class="shell">
+ <div class="intro"><div class="kicker"><span></span> <span id="place-label">THUNG LŨNG THÚ CƯNG</span></div><h1 id="page-title">Làng thú cưng</h1><p id="page-description">Nuôi dưỡng người bạn nhỏ và cùng nhau lên đường phiêu lưu!</p></div>
+ <div class="layout">
+  <div class="main-column">
+   <section class="scene" id="scene" aria-label="Khung cảnh thung lũng">
+    <div class="scene-tag"><span data-icon="map"></span> <span id="scene-label">Đồng Cỏ Ánh Dương</span></div>
+    <div class="pet" id="pet"><span class="pet-tag" id="pet-tag">Cáo Lửa</span><div class="shadow"></div><img src="./assets/fox.webp" alt="Cáo Lửa có chiếc đuôi như ngọn lửa"></div>
+    <div class="enemy" id="enemy" hidden><span class="pet-tag" id="enemy-tag"></span><progress id="enemy-hp" aria-label="Sinh lực đối thủ"></progress><div class="enemy-icon" id="enemy-icon" aria-hidden="true"></div><div class="shadow"></div></div>
+    <div class="scene-hint" id="scene-hint"><span>✦</span> Một ngày đẹp trời để phiêu lưu</div>
+   </section>
+   <section class="controls" aria-labelledby="action-title"><div class="section-title"><span data-icon="spark"></span><h2 id="action-title">Hành động</h2></div><div class="actions" id="actions"></div></section>
+  </div>
+  <aside aria-label="Thông tin người chơi">
+   <section class="panel stats" aria-labelledby="pet-heading">
+    <div class="panel-label"><span data-icon="paw"></span> THÚ CƯNG CỦA BẠN</div>
+    <div class="pet-info"><div class="portrait"><img src="./assets/fox.webp" alt=""></div><div><h2 id="pet-heading">Cáo Lửa</h2><div class="pet-type"><span data-icon="flame"></span> Hệ Lửa</div></div><span class="level" id="level">CẤP 1</span></div>
+    <div id="meters"></div>
+   </section>
+   <section class="panel quests" aria-labelledby="quest-title"><div class="section-title"><span data-icon="flag"></span><h2 id="quest-title">Nhiệm vụ</h2></div><div id="quests"></div></section>
+  </aside>
+ </div>
+ <section class="panel journal" aria-labelledby="journal-title"><div class="section-title"><span data-icon="book"></span><h2 id="journal-title">Nhật ký phiêu lưu</h2></div><ul id="journal" aria-live="polite"></ul></section>
+</main>
+<footer class="shell"><span><strong>Go<span class="accent">Pet</span></strong> · Bản web độc lập lấy cảm hứng từ GoPet</span><span class="saved"><span data-icon="save"></span> <span id="save-label">Tiến độ lưu trên thiết bị này</span></span></footer>
+<script type="module" src="./app.mjs"></script>
+</body>
+</html>
