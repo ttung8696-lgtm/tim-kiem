@@ -1,6 +1,6 @@
 # GoPet HD — bản Windows
 
-[Tải goPetHD.zip từ GitHub Releases](https://github.com/ttung8696-lgtm/tim-kiem/releases/download/gopet-hd-windows/goPetHD.zip)
+[Tải goPetHD.zip từ GitHub](downloads/goPetHD.zip?raw=true)
 
 1. Tải ZIP về máy Windows và giải nén toàn bộ vào cùng một thư mục.
 2. Mở `GoPet.Unity.exe` trong thư mục đã giải nén. Giữ nguyên `GoPet.Unity_Data` và các tệp DLL đi kèm.
